@@ -1,5 +1,5 @@
 #root {
-  max-width: 1500px;
+  max-width: 100%;
   padding: 1rem;
 }
 
@@ -37,4 +37,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+p{
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
 }
