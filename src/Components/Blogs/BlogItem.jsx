@@ -39,8 +39,7 @@ const BlogItem = ({ blog, number, isTrending }) => {
   );
 
   return (
-    <div className={`bg-white rounded-lg shadow-md p-4 mb-4 relative ${isTrending ? 'max-w-2xl' : 'max-w-md'}`}>
-      {isTrending && <div className="text-2xl font-bold text-gray-300 absolute left-0 top-1/2 transform -translate-y-1/2">{number}</div>}
+    <div className="bg-white rounded-lg shadow-md p-4 mb-4 relative">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center relative">
           <img src={blog.authorProfile} alt={blog.authorUsername} className="w-10 h-10 rounded-full mr-2" />
@@ -97,5 +96,4 @@ const BlogItem = ({ blog, number, isTrending }) => {
   );
 };
 
-export default BlogItem;
-
+export default BlogItem;  
