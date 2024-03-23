@@ -1,6 +1,7 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
+  padding:0;
 }
 
 .logo {
@@ -43,4 +44,14 @@ p{
   color: aliceblue;
   font-size: large;
   font-weight: bold;
+}
+.top-blogs-container {
+  width: 100vw; 
+  position: relative; 
+  overflow-x: hidden; 
+  
+}
+
+.topblogs-search-space {
+  margin-bottom: 100px; /* Adjust as needed */
 }
