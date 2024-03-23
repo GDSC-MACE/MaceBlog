@@ -15,6 +15,7 @@
 body{
   background: url(../bg_img.png);
   background-color: #11101d;
+  margin: 0;
 }
 
 .text-gradient {
@@ -137,3 +138,6 @@ body{
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+
+
