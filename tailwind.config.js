@@ -4,6 +4,7 @@ export const mode = "jit";
 export const theme = {
   extend: {
     colors: {
+      glass: "#272B2F",
       primary: "#FF6700",
       secondary: "#FFFFFF",
       dimWhite: "rgba(255, 255, 255, 0.7)",
