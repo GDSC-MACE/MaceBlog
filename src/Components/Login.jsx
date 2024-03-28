@@ -6,10 +6,8 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here, you can use email and password state variables
     console.log('Email:', email);
     console.log('Password:', password);
-    // Add your form submission logic here, such as sending a request to your backend
   };
 
   return (
