@@ -1,4 +1,5 @@
 import './App.css'
+import Dash from './Components/Dash'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import TopBlogs from './Components/TopBlogs'
@@ -20,6 +21,7 @@ function App() {
       <div className='topblogs-search-space'></div>
       <Search/>
       <div className='topblogs-search-space'></div>
+      <Dash/>
 
       <div className='Login'></div>
       <Login/>
@@ -27,6 +29,7 @@ function App() {
 
       
       </div>
+      
     </div>
     
      
