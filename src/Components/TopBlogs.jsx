@@ -34,7 +34,7 @@ function TopBlogs() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[500px] max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
+    <section className="relative w-full min-h-[600px] max-md:px-5 max-md:pb-10 max-md:max-w-full max-md:text-4xl">
       <h2 className="absolute top-10 left-10 z-10 text-4xl font-semibold text-white max-md:text-xl">OUR TOP BLOGS</h2>
       <img
         loading="lazy"
