@@ -4,6 +4,7 @@ import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import TopBlogs from './Components/TopBlogs'
 import Search from './Components/Search'
+import Login from './Components/Login'
 
 function App() {
   return (
@@ -21,6 +22,12 @@ function App() {
       <Search/>
       <div className='topblogs-search-space'></div>
       <Dash/>
+
+      <div className='Login'></div>
+      <Login/>
+      <div className='Login'></div>
+
+      
       </div>
       
     </div>
