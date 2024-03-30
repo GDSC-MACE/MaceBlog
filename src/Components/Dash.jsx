@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Dash() {
   return (
@@ -7,7 +8,7 @@ function Dash() {
     {/* <div className="w-[1280px] h-[832px] left-0 top-[11px] absolute bg-gradient-to-b from-neutral-800 to-slate-600" /> */}
     {/* <img className="w-[1280px] h-[841px] left-0 top-0 absolute mix-blend-lighten" src="https://via.placeholder.com/1280x841" /> */}
   {/* </div> */}
-  <div className="left-[42px] top-[38px] absolute text-orange-500 text-[25px] font-bold font-['DM Sans']">back to home</div>
+  <div className="left-[42px] top-[38px] absolute text-orange-500 text-[25px] font-bold font-['DM Sans']"><Link to="/nav">back to home</Link></div>
   <div className="w-[650px] h-[592px] left-[60px] top-[201px] absolute bg-[linear-gradient(to_right,_rgba(255,255,255,0.12)_75%,_#FF6700_75%)] rounded-xl shadow  backdrop-blur-[6px]" />
   <div className="left-[60px] top-[107px] absolute text-orange-500 text-7xl font-bold font-['DM Sans']">Add new BLOG</div>
   <div className="w-[245px] h-[59px] left-[84px] top-[240px] absolute bg-neutral-800 rounded-xl shadow" />
