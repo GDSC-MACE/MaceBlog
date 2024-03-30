@@ -8,7 +8,7 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!email || !password) {
+    if (!email || !password||email==null||password==null) {
       setErrorMessage('Please fill in all fields.');
       return;
     }
