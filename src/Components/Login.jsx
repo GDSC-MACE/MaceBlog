@@ -57,7 +57,7 @@ function Login() {
               type="submit"
               className="justify-center px-12 py-5 mt-9 ml-28 font-bold whitespace-nowrap bg-orange-500 rounded-xl text-zinc-800 tracking-[2px] max-md:px-5 max-md:ml-2.5 cursor-pointer"
             >
-              Login
+              <Link to="/admin">Login</Link>
             </button>
             {errorMessage && <div className="text-red-500 mt-3">{errorMessage}</div>}
           </form>
