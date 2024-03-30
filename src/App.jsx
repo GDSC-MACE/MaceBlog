@@ -6,6 +6,7 @@ import TopBlogs from './Components/TopBlogs'
 import Search from './Components/Search'
 import Login from './Components/Login'
 import Blogs from './Components/Blogs'
+import Contact from './Components/Contact'
 function App() {
   return (
     <>
@@ -27,7 +28,7 @@ function App() {
       <div className='Login'></div>
       <Login/>
       <div className='Login'></div>
-
+      <Contact/>
       
       </div>
       
