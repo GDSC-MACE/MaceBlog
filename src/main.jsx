@@ -8,6 +8,10 @@ import Dash from './Components/Dash.jsx';
 import TopBlogs from './Components/TopBlogs.jsx';
 const router = createBrowserRouter([
   {
+    path: "/", // Define the root URL
+    element: <App />, // Render the App component for the root URL
+  },
+  {
     path: "/nav",
     element: <App />,
   },
