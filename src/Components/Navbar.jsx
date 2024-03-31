@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import logo from './../assets/images/logowhite.png'
 import { Button } from "@material-tailwind/react"
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     let Links =[
         {name:"HOME",link:"/"},
@@ -31,7 +31,9 @@ const Navbar = () => {
                         <a href={link.link} className='text-secondary font-poppins hover:text-blue-400 duration-500'>{link.name}</a>
                     </li>))
                 }
-                <Button className='transform hover:scale-110 bg-secondary/65 text-black font-bold py-2 px-4 rounded-full'>Login</Button>
+                <Button className='transform hover:scale-110 bg-secondary/65 text-black font-bold py-2 px-4 rounded-full'>                                    
+                <Link to="/login">Login</Link>
+</Button>
             </ul>
             {/* button */}
            </div>

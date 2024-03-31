@@ -1,11 +1,12 @@
 import './App.css'
-import Dash from './Components/Dash'
+//import Dash from './Components/Dash'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import TopBlogs from './Components/TopBlogs'
 import Search from './Components/Search'
-import Login from './Components/Login'
+//import Login from './Components/Login'
 import Blogs from './Components/Blogs'
+import Contact from './Components/Contact'
 function App() {
   return (
     <>
@@ -22,12 +23,10 @@ function App() {
       <Search/>
       <div className='topblogs-search-space'></div>
       <Blogs/>
-      <Dash/>
+      
       <div className='topblogs-search-space'></div>
-      <div className='Login'></div>
-      <Login/>
-      <div className='Login'></div>
-
+      
+      <Contact/>
       
       </div>
       
