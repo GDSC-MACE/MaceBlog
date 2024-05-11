@@ -1,40 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom'; // Import createRoot
 import App from './App.jsx';
 import './index.css';
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Components/Login.jsx';
 import Dash from './Components/Dash.jsx';
+import SignUp from './Components/SignUp.jsx';
 import TopBlogs from './Components/TopBlogs.jsx';
-const router = createBrowserRouter([
-  {
-    path: "/", // Define the root URL
-    element: <App />, // Render the App component for the root URL
-  },
-  {
-    path: "/nav",
-    element: <App />,
-  },
-  {
-    path: "/login", 
-    element: <Login />,
-  },
-  {
-    path: "/admin", 
-    element: <Dash />,
-  },
-  {
-    path: "/top", 
-    element: <TopBlogs />,
-  },
 
-]);
+const root = createRoot(document.getElementById('root')); // Create root element
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/nav" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp/>}/>
+        <Route path="/admin" element={<Dash />} />
+        <Route path="/top" element={<TopBlogs />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
