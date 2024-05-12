@@ -7,6 +7,7 @@ import Search from './Components/Search'
 //import Login from './Components/Login'
 import Blogs from './Components/Blogs'
 import Contact from './Components/Contact'
+import SignUp from './Components/SignUp'
 function App() {
   return (
     <>
