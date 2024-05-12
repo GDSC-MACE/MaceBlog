@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -88,7 +89,7 @@ function Contact() {
           </form>
           {/* Signup link */}
           <div className="text-white my-8">
-            Don’t have an account? <span className="font-bold text-orange-500">Sign Up</span>
+          Don’t have an account?<span className="font-bold">  <Link to="/SignUp">Sign Up</Link></span>
           </div>
         </div>
       </div>

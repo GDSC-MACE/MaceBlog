@@ -9,7 +9,17 @@ function BlogImage({ image, aspectRatio, description }) {
 
   const containerClasses = `
     flex w-full max-md:w-full relative overflow-hidden 
-    border border-orange-500 border-8 border-l-[25px] border-t-[25px] border-r-[25px]  mb-4 px-4 ${isHovered ? 'transform rotate-y-180' : ''}
+    border border-orange-500 border-8 border-l-[25px] border-t-[25px] border-r-[25px]  mb-4 px-4
+  `;
+
+  const imageContainerClasses = `
+    bg-orange w-full h-full absolute top-0 left-0 right-0 bottom-0  overflow-hidden 
+    transition-transform duration-500 ${isHovered ? 'transform translate-y-[-100%]' : 'transform translate-y-0'}
+  `;
+
+  const descriptionContainerClasses = `
+    bg-white w-full h-full absolute top-0 left-0 right-0 bottom-0 z-10  opacity-0 
+    transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}
   `;
 
   return (
@@ -17,20 +27,18 @@ function BlogImage({ image, aspectRatio, description }) {
       className={containerClasses}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ aspectRatio: aspectRatio, transition: 'transform 0.5s ease' }}
+      style={{ aspectRatio: aspectRatio }}
     >
-      <div className="absolute bg-orange-500 w-full h-full opacity-5 top-0 left-0 z-10 rounded-xl">
-      </div>
-
-      <div className="bg-orange w-full h-full absolute top-0 left-0 right-0 bottom-0 rounded-xl">
+      <div className={imageContainerClasses}>
         <img
           loading="lazy"
           src={image}
           alt=""
-          className="w-full h-full justify-center rounded-xl object-cover"
+          className="w-full h-full justify-center  object-cover"
         />
-        <div className="absolute bg-orange-500 w-full h-full opacity-5 top-0 left-0 z-0 rounded-xl"></div>
-        <p className="absolute text-white p-4 z-10">{description}</p>
+      </div>
+      <div className={descriptionContainerClasses}>
+        <p className="text-black p-4">{description}</p>
       </div>
     </div>
   );
