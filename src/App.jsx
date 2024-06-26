@@ -7,7 +7,7 @@ import Search from './Components/Search'
 //import Login from './Components/Login'
 import Blogs from './Components/Blogs'
 import Contact from './Components/Contact'
-import SignUp from './Components/SignUp'
+//import SignUp from './Components/SignUp'
 function App() {
   return (
     <>
@@ -16,7 +16,6 @@ function App() {
       <Navbar/>
       <Hero/>
       <div className='topblogs-search-space'></div>
-      
       <div className='top-blogs-container'> 
         <TopBlogs/>
       </div>
